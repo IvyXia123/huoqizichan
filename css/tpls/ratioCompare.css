@@ -1,0 +1,25 @@
+.ratioCompare{
+    height:calc(100% - 65px);
+    font-size:0;
+}
+.ratioCompare .graphBtn{
+    display:inline-block;
+    width:50%;
+    height:30px;
+    padding:3px;
+    border:1px solid #c0c0c0;
+    box-sizing:border-box;
+    font-size:14px;
+    text-align:center;
+    border-radius:3px;
+}
+.ratioCompare .btnActive{
+    background:#ccc;
+}
+.ratioCompare .graphContainer{
+    margin-top:35px;
+
+}
+.ratioCompare .graphContainer #totalScale,.ratioCompare .graphContainer #ratioCompare{
+    display:none;
+}

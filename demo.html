@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<link rel="stylesheet" type="text/css" href="src/Datepicker/css/foundation-datepicker.min.css"/>-->
+    <link rel="stylesheet" type="text/css" href="src/foundation-datepicker/css/foundation-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/aLi-icon/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/init.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tpls/historyAsset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tpls/order.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/tpls/demo.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/tpls/todayTotalScale.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tpls/ratioCompare.css"/>
+    <style type="text/css">
+        .icon {
+            /* 通过设置 font-size 来改变图标大小 */
+            width: 1em; height: 1em;
+            /* 图标和文字相邻时，垂直对齐 */
+            vertical-align: -0.15em;
+            /* 通过设置 color 来改变 SVG 的颜色/fill */
+            fill: currentColor;
+            /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+               normalize.css 中也包含这行 */
+            overflow: hidden;
+        }
+    </style>
+    <script src="css/aLi-icon/iconfont.js"></script>
+</head>
+<body>
+
+    <div class="outerBox">
+        <!--header开始-->
+        <header>
+            <div class="sysName">
+                <a href="">活期资产配置系统</a>
+            </div>
+            <ul class="basicInfo">
+                <li>
+                    <svg class="icon userIcon" aria-hidden="true">
+                        <use xlink:href="#icon-yonghu"></use>
+                    </svg>
+                    <span class="user">用户：</span>
+                </li>
+                <li class="userName">&nbsp;赵鹏</li>
+                <li class="exit">
+                    <a href="#">&nbsp;&nbsp;退出登录</a>
+                </li>
+            </ul>
+        </header>
+        <!--header结束-->
+        <!--section开始-->
+        <section class="contentBody">
+            <!--<div class="contentNav">-->
+            <ul class="contentNav">
+                <li class="navActive">
+                    <a data-href="historyAsset">
+                        <svg class="icon navIcon" aria-hidden="true">
+                            <use xlink:href="#icon-lishi"></use>
+                        </svg>
+                        <span>历史资产规模</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-href="order">
+                        <svg class="icon navIcon" aria-hidden="true">
+                            <use xlink:href="#icon-shengouchuli"></use>
+                        </svg>
+                        <span>申购赎回及指令</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-href="todayTotalScale">
+                        <svg class="icon navIcon" aria-hidden="true">
+                            <use xlink:href="#icon-zichan1"></use>
+                        </svg>
+                        <span>今日资产规模</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-href="ratioCompare">
+                        <svg class="icon navIcon" aria-hidden="true">
+                            <use xlink:href="#icon-tubiao1"></use>
+                        </svg>
+                        <span>资产净申购及总规模及收益率对比</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-href="statement">
+                        <svg class="icon navIcon" aria-hidden="true">
+                            <use xlink:href="#icon-baobiao"></use>
+                        </svg>
+                        <span>报表模块</span>
+                    </a>
+                </li>
+            </ul>
+            <!--</div>-->
+            <div class="graphBox" id="wrapper">
+            </div>
+        </section>
+        <!--section结束-->
+    </div>
+</body>
+<script src="src/Datepicker/js/jquery-1.11.3.min.js"></script>
+<script src="src/echarts/echarts.min.js"></script>
+<!--<script src="src/Datepicker/js/foundation-datepicker.min.js"></script>-->
+<!--<script src="src/Datepicker/js/locales/foundation-datepicker.zh-CN.js"></script>-->
+<script src="src/foundation-datepicker/js/foundation-datepicker.min.js"></script>
+<script src="src/foundation-datepicker/js/locales/foundation-datepicker.zh-CN.js"></script>
+
+<script src="src/demo.js"></script>
+<script src="src/tpls/historyAsset.js"></script>
+<script src="src/tpls/order.js"></script>
+<script src="src/tpls/todayTotalScale.js"></script>
+<script src="src/tpls/ratioCompare.js"></script>
+<!--<script src="src/iscroll-lite.js"></script>-->
+<!--<script>
+    var myscroll;
+    function loaded() {
+        setTimeout(function () {
+            myscroll = new iScroll("wrapper", {
+                lockDirection: false,
+                scroller: true,
+                scrollbars: true,
+                vScrollbar: false
+            });
+        });
+    }
+
+    window.addEventListener("load", loaded, false);
+</script>-->
+
+</html>

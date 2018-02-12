@@ -1,0 +1,186 @@
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family:"微软雅黑";
+}
+ul,li{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+a:hover{
+    text-decoration:none;
+}
+.outerBox{
+    width:100%;
+    height:100%;
+}
+/*header开始*/
+header{
+    height:50px;
+    background:#345A71;
+    padding:0 15px;
+}
+.sysName,.basicInfo{
+    display:inline-block;
+}
+.basicInfo{
+    float:right;
+}
+.basicInfo li{
+    float:left;
+    height:50px;
+    color:#fff;
+}
+.basicInfo li .userIcon,.basicInfo li .user,.basicInfo .exit a{
+    width:14px;
+    height:14px;
+    color:#dbfbff;
+}
+.basicInfo .exit a:hover{
+    color:#FFC107;
+    /*text-decoration:none;*/
+}
+.sysName a{
+    font-size:20px;
+    line-height:50px;
+}
+.sysName a:hover{
+    color:#fff;
+}
+.basicInfo li{
+    line-height:50px;
+    font-size:14px;
+}
+.basicInfo li a:hover{
+    color:#fff;
+}
+.contentBody{
+    height: calc(100% - 50px);
+}
+/*header结束*/
+/*section开始*/
+.contentNav{
+    width:15%;
+    background:#659DA4;
+    height:100%;
+    font-size:14px;
+    float:left;
+}
+.navIcon{
+    width:16px!important;
+    height:16px!important;
+    margin-right:5px;
+}
+.contentNav li{
+    /*height:40px;*/
+}
+.contentNav li.navActive{
+    background:#009F95;
+}
+.contentNav li a{
+    display:inline-block;
+    padding:18px 15px;
+    width:100%;
+    box-sizing:border-box;
+}
+.contentNav li a:hover{
+    background:#009F95;
+    color:#fff;
+}
+.contentNav li a:hover .triangle{
+    border-right-color:#fff;
+    transform:rotate(180deg);
+}
+.contentNav li.navActive a{
+    color:#fff;
+}
+.contentNav li.navActive .triangle{
+    border-right-color:#fff;
+    transform:rotate(180deg);
+}
+.contentNav .triangle{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border:5px solid transparent;
+    box-sizing:border-box;
+    border-right:5px solid #9D9D9D;
+    float:right;
+}
+.graphBox{
+    width:85%!important;
+    height: 100%;
+    padding:30px;
+    box-sizing:border-box;
+    background:#F3F3F4;
+    float:left;
+}
+.showBox{
+    width:100%;
+    /*height:100%;*/
+    background:#fff;
+}
+.graphDesc{
+    padding:5px 15px;
+    height:50px;
+    line-height:40px;
+    border-bottom:2px solid #F3F3F4;
+    box-sizing:border-box;
+}
+#calendarBox{
+    position:relative;
+    display:inline-block;
+    margin-left:30px;
+}
+#calendar{
+    padding:3px 5px 3px 28px;
+    border-radius:3px;
+   border:1px solid #909090;
+}
+.calendarIcon{
+    position:absolute;
+    top:10px;
+    left:5px;
+}
+.tableIcon,.graphIcon,.calendarIcon{
+    color:#FFB86A;
+    font-size:18px;
+    margin-right:8px;
+}
+.graphShow{
+    position:relative;
+    padding:20px 30px 20px 30px;
+    box-sizing:border-box;
+    overflow:auto;
+}
+.showArea{
+    background:ghostwhite;
+}
+/*自定义滚动条开始*/
+::-webkit-scrollBar{
+    width:0;
+}
+.scrollBar{
+    position:absolute;
+    background:rgba(0,0,0,0.5);
+}
+.scrollBarY{
+    width:4px;
+    right:0;
+    top:0;
+}
+.scrollBarX{
+    height:4px;
+    left:0;
+    bottom:0;
+}
+/*自定义滚动条结束*/
+/*section结束*/
+

@@ -1,0 +1,62 @@
+/*左侧导航栏开始*/
+.leftNav{
+    background:#2F4050;
+    padding:0;
+}
+.list-group .active{
+    background:#293846;
+    border-color:#293846;
+}
+.list-group .active span {
+    font-size:12px;
+}
+a.list-group-item{
+    -moz-border-radius:0!important;
+    -webkit-border-radius: 0!important;
+    background:#2F4050;
+    border-color:#2F4050;
+    border-width:0;
+    color:#999;
+}
+.list-group-item:hover{
+    color:#fff!important;
+    background:#293846!important;
+}
+.list-group-item:hover span{
+    font-size:12px;
+}
+.list-group-item:active{
+    color:#fff!important;
+    background:#293846!important;
+}
+.list-group-item:active span{
+    font-size:12px;
+}
+.list-group-item span{
+    float:right;
+}
+.glyphicon{
+    font-size:12px;
+}
+    /*左侧导航栏结束*/
+/*右侧图表栏开始*/
+.graphShow{
+    background:#F3F3F4;
+    padding:30px;
+}
+.showBox{
+    background:#fff;
+    width:100%;
+    height:100%;
+}
+.graphDesc{
+    padding:5px 15px;
+    height:50px;
+    line-height:40px;
+    border-bottom:2px solid #F3F3F4;
+}
+.glyphicon-stats{
+    color:#FFB86A;
+    font-size:18px;
+}
+/*右侧图表栏结束*/

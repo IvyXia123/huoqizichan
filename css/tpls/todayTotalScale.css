@@ -1,0 +1,11 @@
+.todayTotalScale{
+    border-collapse:collapse;
+    width:100%;
+    height:100%;
+    text-align:center;
+    color:#000;
+}
+.todayTotalScale th,.todayTotalScale td{
+    border:1px solid #ccc;
+    padding:5px;
+}

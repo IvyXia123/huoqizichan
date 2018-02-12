@@ -1,0 +1,12 @@
+.historyAsset{
+    /*position:absolute;*/
+    border-collapse:collapse;
+    width:100%;
+    height:120%;
+    text-align:center;
+    color:#000;
+}
+.historyAsset th,.historyAsset td{
+    border:1px solid #ccc;
+    padding:5px;
+}
